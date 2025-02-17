@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* RTL Support */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  .rtl .ml-auto {
+    margin-left: unset;
+    margin-right: auto;
+  }
+
+  .rtl .mr-auto {
+    margin-right: unset;
+    margin-left: auto;
+  }
+
+  .rtl .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  .rtl .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+  }
+
+  /* RTL-specific padding adjustments */
+  .rtl .pl-4 {
+    padding-left: unset;
+    padding-right: 1rem;
+  }
+
+  .rtl .pr-4 {
+    padding-right: unset;
+    padding-left: 1rem;
+  }
+
+  /* RTL-specific margin adjustments */
+  .rtl .ml-4 {
+    margin-left: unset;
+    margin-right: 1rem;
+  }
+
+  .rtl .mr-4 {
+    margin-right: unset;
+    margin-left: 1rem;
+  }
+
+  /* RTL-specific flex direction */
+  .rtl .flex-row {
+    flex-direction: row-reverse;
+  }
+
+  .rtl .justify-end {
+    justify-content: flex-start;
+  }
+}

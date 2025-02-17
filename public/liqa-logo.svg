@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="100" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#8CC63F">
+    <!-- l -->
+    <path d="M20,30 h10 v40 h-10z" />
+    <!-- i -->
+    <circle cx="40" cy="25" r="5" />
+    <path d="M35,40 h10 v30 h-10z" />
+    <!-- q -->
+    <path d="M55,40 h10 v40 l10,10 h-30 v-50z" />
+    <!-- a -->
+    <path d="M85,40 h30 v30 h-30 v-30 h30 M85,55 h30" />
+  </g>
+</svg>
