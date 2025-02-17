@@ -1,0 +1,19 @@
+
+name: Upload Hidden Files
+
+on: [push, pull_request]  # Run on every push or PR
+
+jobs:
+  upload-hidden-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Upload Artifacts (including hidden files)
+        uses: actions/upload-artifact@v4
+        with:
+          name: hidden-files
+          path: .
+          include-hidden-files: true
